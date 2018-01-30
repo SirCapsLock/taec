@@ -32,12 +32,12 @@
                             <div class="navbar-item has-dropdown is-hoverable">
                                 <router-link to="/services" class="navbar-link">Services</router-link>
                                 <div class="navbar-dropdown">
-                                    <router-link to="/events" class="navbar-item">Disc Jockeys and MCs</router-link>
-                                    <router-link to="/events" class="navbar-item">Event Planning</router-link>
-                                    <router-link to="/events" class="navbar-item">Wedding Planning</router-link>
-                                    <router-link to="/events" class="navbar-item">Movie Nights</router-link>
-                                    <router-link to="/events" class="navbar-item">Photo Booths</router-link>
-                                    <router-link to="/events" class="navbar-item">Add-Ons</router-link>
+                                    <router-link to="/services/dj" class="navbar-item">Disc Jockeys and MCs</router-link>
+                                    <router-link to="/services/planning" class="navbar-item">Event Planning</router-link>
+                                    <router-link to="/services/weddings" class="navbar-item">Wedding Planning</router-link>
+                                    <router-link to="/services/movie-nights" class="navbar-item">Movie Nights</router-link>
+                                    <router-link to="/services/photo-booths" class="navbar-item">Photo Booths</router-link>
+                                    <router-link to="/services/add-ons" class="navbar-item">Add-Ons</router-link>
                                 </div>
                             </div>
                             <div class="navbar-item has-dropdown is-hoverable">

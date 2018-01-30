@@ -1,0 +1,37 @@
+{
+  "name": "taec",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "Enrique De Diego <enrique@catharsis.io>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --config=./node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=./node_modules/laravel-mix/setup/webpack.config.js",
+    "deploy": "aws s3 cp dist/ s3://seaty.wikiwekiwedding.com/dist --acl public-read --recursive",
+    "mix": "cross-env NODE_ENV=development webpack-dev-server --open --hot --inline --config=./node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=./node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bulma": "^0.5.3",
+    "laravel-mix": "^1.4.5",
+    "vue": "^2.3.3",
+    "vue-router": "^2.7.0",
+    "vuex": "^2.4.1",
+    "vuexfire": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.5.1",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^5.0.1",
+    "vue-loader": "^12.1.0",
+    "vue-template-compiler": "^2.3.3",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
